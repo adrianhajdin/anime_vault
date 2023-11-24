@@ -84,18 +84,6 @@ export const data = [
     score: "9.0",
   },
   {
-    id: "8",
-    name: "itachi_uchiha",
-    image: {
-      original:
-        "https://comicvine.gamespot.com/a/uploads/scale_small/0/378/859934-god2vj0xj3.jpg",
-    },
-    kind: "Special",
-    episodes: 1,
-    episodes_aired: 1,
-    score: "8.54",
-  },
-  {
     id: "9",
     name: "one_piece",
     image: {
