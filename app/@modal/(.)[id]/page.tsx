@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { fetchAnime } from "@/app/actions";
 import { Modal } from "@/components/Modal";
-import BackwardIcon from "@/public/back.svg";
 import FilledStarIcon from "@/public/filled_star.svg";
+import BackButton from "@/components/BackButton";
 
 async function PhotoModal({
   params: { id: animeId },
@@ -76,15 +75,7 @@ async function PhotoModal({
             </div>
           </div>
         </div>
-        <Link href={`../`}>
-          <Image
-            src={BackwardIcon}
-            width={40}
-            height={40}
-            alt="Back"
-            className="p-2"
-          />
-        </Link>
+        <BackButton />
       </section>
     </Modal>
   );

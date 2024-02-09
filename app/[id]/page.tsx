@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { fetchAnime } from "../actions";
-import BackwardIcon from "@/public/back.svg";
 import FilledStarIcon from "@/public/filled_star.svg";
+import BackButton from "@/components/BackButton";
 
 async function AnimePage({ params }: { params: { id: string } }) {
   const anime = await fetchAnime(params.id);
@@ -70,15 +69,7 @@ async function AnimePage({ params }: { params: { id: string } }) {
           </div>
         </div>
       </div>
-      <Link href={`../`}>
-        <Image
-          src={BackwardIcon}
-          width={40}
-          height={40}
-          alt="Back"
-          className="p-2"
-        />
-      </Link>
+      <BackButton />
     </section>
   );
 }
