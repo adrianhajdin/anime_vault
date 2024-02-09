@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -12,7 +14,7 @@ function BackButton() {
       width={40}
       height={40}
       alt="Back"
-      className="p-2"
+      className="p-2 cursor-pointer"
       onClick={() => router.back()}
     />
   );
