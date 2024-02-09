@@ -51,7 +51,7 @@ async function AnimePage({ params }: { params: { id: string } }) {
               <div className="text-slate-300 mr-20">
                 Number of Episodes:{" "}
                 <span className="text-white">
-                  {anime.episodes ?? "Until Now"}
+                  {anime.episodes === 0 ? "Until Now" : anime.episodes}
                 </span>
               </div>
               <div className="text-slate-300">
