@@ -18,3 +18,11 @@ export async function fetchAnimes(page: number) {
     </Link>
   ));
 }
+
+export async function fetchAnime(id: string) {
+  const response = await fetch(`https://shikimori.one/api/animes/${id}`);
+
+  const data = await response.json();
+
+  return data;
+}
